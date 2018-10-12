@@ -1,38 +1,149 @@
 body {
 	margin: 0;
-	width: 100%;
 	overflow-x: hidden;
-}
-
-canvas {
-	cursor: crosshair;
-	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
 
 .container {
 }
 
 .home {
-	background: #252934;
-	width: 100%;
+	height: 100vh;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.text-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.text {
+	padding: 20px 0;
+}
+
+.text h1 {
+	margin: 0;
+}
+
+.text span {
+	color: #50ceb5;
+}
+
+.button {
+	border: 3px solid #50ceb5;
+	padding: 8px 15px;
+	font-size: 1em;
+	background-color: transparent;
+	color: #50ceb5;
+	transition: .4s;
+}
+
+.button:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
 .navbar {
-
+	padding: 10px;
+	position: -webkit-sticky;
+	position: sticky;
+	background-color: #020721;
+	font-size: 1.3rem;
+	border-bottom: 3px solid #50ceb5;
+	top: -1px;
 }
 
-.about {
-
+.link-container {
+	display: flex;
+	align-content: flex-start;
 }
+.page-link {
+	padding: 10px;
+	color: #796da8;
+	text-transform: uppercase;
+	transition: .2s;
+	cursor: pointer;
+}
+.page-link:hover {
+	color: #50ceb5;
+}
+
+/* .about {
+	padding: 200px;
+	background-color: #fefdfc;
+} */
 
 .portfolio {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
 
+.my-portfolio-text {
+	margin: 0;
+	padding: 0 0 50px;
+}
+
+.my-projects {
+	background-color: #fefdfc;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: 500px;
+	min-width: 400px;
+	background-size: cover;
+	background-position: center;
+	margin: 0 10px;
+}
+
+.project img{
+	width: 100%;
 }
 
 .contact {
 
+}
+
+.footer {
+
+}
+
+.canv-wrap {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+	display: flex;
+	background-color: #030b34;
+	z-index: -1;
+}
+
+canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+	font-size: 18px;
+}
+
+
+@media screen and (min-width: 1200px) {
+	font-size: 20px;
 }

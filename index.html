@@ -9,8 +9,10 @@
   <body>
     <div class="container">
       <section class="home">
-        <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-        <div class="intro-wrap">
+        <div class="canv-wrap">
+          <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+        </div>
+        <div class="text-wrap">
           <div class="text">
             <h1>Hello, I'm
               <span>Axel Wredlert</span>
@@ -18,22 +20,45 @@
               I'm a web-developer.
             </h1>
           </div>
-          <button class="button">View my work</button>
+          <button class="button">Need a website?</button>
         </div>
       </section>
       <nav class="navbar">
         <div class="link-container">
           <div class="page-link" dest="home">home</div>
-          <div class="page-link" dest="about">about</div>
+          <!-- <div class="page-link" dest="about">about</div> -->
           <div class="page-link" dest="portfolio">portfolio</div>
           <div class="page-link" dest="contact">contact</div>
         </div>
       </nav>
-      <section class="about"></section>
-      <section class="portfolio"></section>
+      <!-- <section class="about"></section> -->
+      <section class="portfolio">
+        <h2 class="my-portfolio-text">Recent Projects</h2>
+        <div class="my-projects">
+          <div class="project">
+            <img src="../img/check-weather.png" alt="">
+            <div class="p-description">
+
+            </div>
+          </div>
+          <div class="project">
+            <img src="../img/check-weather.png" alt="">
+            <div class="p-description">
+
+            </div>
+          </div>
+          <div class="project">
+            <img src="../img/check-weather.png" alt="">
+            <div class="p-description">
+
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="contact"></section>
+      <footer class="footer"></footer>
     </div>
-    <script src="js/firework.js"></script>
+    <script src="js/dots.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
