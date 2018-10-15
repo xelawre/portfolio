@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>AxelWredlert</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -20,43 +21,51 @@
               I'm a web-developer.
             </h1>
           </div>
-          <button class="button">Need a website?</button>
+          <div class="button-wrap">
+            <button class="button">Need a website?</button>
+            <button class="button">View my work</button>
+          </div>
         </div>
       </section>
       <nav class="navbar">
         <div class="link-container">
           <div class="page-link" dest="home">home</div>
-          <!-- <div class="page-link" dest="about">about</div> -->
+          <div class="page-link" dest="about">about</div>
           <div class="page-link" dest="portfolio">portfolio</div>
           <div class="page-link" dest="contact">contact</div>
         </div>
       </nav>
-      <!-- <section class="about"></section> -->
+      <section class="about"></section>
       <section class="portfolio">
-        <h2 class="my-portfolio-text">Recent Projects</h2>
+        <h2 class="my-portfolio-text">Recent projects</h2>
         <div class="my-projects">
           <div class="project">
+            <a class="p-1 project-link" target="_blank" href="http://axelwredlert.com/check-weather" onmouseover="slideInText(event)" onmouseout="hideText(event)"></a>
             <img src="../img/check-weather.png" alt="">
             <div class="p-description">
-
+              HTML, CSS & JavaScript
             </div>
           </div>
           <div class="project">
+            <a class="p-2 project-link" target="_blank" href="http://axelwredlert.com/check-weather" onmouseover="slideInText(event)" onmouseout="hideText(event)"></a>
             <img src="../img/check-weather.png" alt="">
             <div class="p-description">
-
+              HTML, CSS & JavaScript
             </div>
           </div>
           <div class="project">
+            <a class="p-3 project-link" target="_blank" href="http://axelwredlert.com/check-weather" onmouseover="slideInText(event)" onmouseout="hideText(event)"></a>
             <img src="../img/check-weather.png" alt="">
             <div class="p-description">
-
+              HTML, CSS & JavaScript
             </div>
           </div>
         </div>
+        <div class="button-wrap">
+          <a class="button" target="_blank" href="https://github.com/xelawre">View my Github <i class="fab fa-github"></i> </a>
+        </div>
       </section>
       <section class="contact"></section>
-      <footer class="footer"></footer>
     </div>
     <script src="js/dots.js"></script>
     <script src="js/main.js"></script>
