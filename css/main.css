@@ -100,11 +100,11 @@ body {
 }
 
 .portfolio {
+	width: 100%;
 	border-top: 4px solid #50ceb5;
 	background-image: url('../img/project-bg.png');
 	background-position: center;
 	background-size: cover;
-	padding: 80px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -119,51 +119,64 @@ body {
 }
 
 .my-projects {
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
-	padding: 80px 0;
+	/* padding: 80px 0; */
 }
 
 .project {
+	flex: 1 1 500px;
 	padding: 15px;
-	width: 500px;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
+}
+
+.content-wrapper {
+	position: relative;
+	width: 100%;
+	background-color: red;
 }
 
 .project-link {
 	width: 100%;
-	height: 350px;
+	height: 100%;
 	position: absolute;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .project img{
 	width: 100%;
-	cursor: pointer;
-	border: 2px solid #50ceb5;
+	/* border: 2px solid #50ceb5;
+	border-radius: 5px;  */
 }
 
 .p-description {
 	position: absolute;
-	text-align: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: .5;
+	font-size: .8em;
+	background-color: whitesmoke;
+}
+
+.p-techs {
+		position: absolute;
+		/* bottom: 0;
+		left: 0; */
+	/* text-align: center;
 	background-color: #50ceb5;
 	padding: 20px 2px;
 	color: white;
 	font-size: .8em;
-	width: inherit;
-	opacity: 0;
-	transition: .5s;
-	pointer-events: none;
-	visibility: hidden;
-}
-
-.show-text {
-	opacity: 1;
-	transition: .5s;
-	margin-top: -75px;
-	visibility: visible;
+	width: inherit; */
+	/* opacity: 0; */
+	/* transition: .5s; */
+	/* pointer-events: none; */
+	/* visibility: hidden; */
+	/* border-radius: 0 0 5px 5px; */
 }
 
 .contact {
