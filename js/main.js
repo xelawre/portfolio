@@ -14,9 +14,9 @@ var inactivityTime = function() {
     }
 
     function resetTimer() {
-        document.getElementsByClassName('arrow')[0].style.visibility = 'hidden';
+        // document.getElementsByClassName('arrow')[0].style.visibility = 'hidden';
         clearTimeout(t);
-        t = setTimeout(showArrow, 5000)
+        t = setTimeout(showArrow, 2000)
     }
 };
 

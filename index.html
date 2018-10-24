@@ -9,48 +9,46 @@
   </head>
   <body>
     <div class="container">
+      <a name="home"></a>
       <section class="home">
         <div class="canv-wrap">
           <canvas id="canvas">Canvas is not supported in your browser.</canvas>
         </div>
         <div class="text-wrap">
-          <img src="img/axel.png" alt="about-picture">
+          <img class="profile-picture" src="img/axel.png" alt="profile-picture">
           <div class="text">
-            <h1>Hello, I'm
+            <h1>Hej, jag heter
               <span>Axel Wredlert</span>
             </h1>
           </div>
           <div class="button-wrap">
-            <button class="button">Contact me</button>
-            <button class="button">View my work</button>
+            <a class="button" href="#contact">Kontakta mig</a>
+            <a class="button" href="#portfolio">Mina projekt</a>
           </div>
         </div>
-        <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+        <div class="arrow"> <a href="#about"><i class="fas fa-arrow-down"></i></a></div>
       </section>
       <nav class="navbar">
         <div class="link-container">
-          <div class="page-link" dest="home">home</div>
-          <div class="page-link" dest="about">about</div>
-          <div class="page-link" dest="portfolio">portfolio</div>
-          <div class="page-link" dest="contact">contact</div>
+          <div class="page-link"><a href="#home">Hem</a></div>
+          <div class="page-link"><a href="#about">Om</a></div>
+          <div class="page-link"><a href="#portfolio">Portfölj</a></div>
+          <div class="page-link"><a href="#contact">Kontakt</a></div>
         </div>
       </nav>
+      <a name="about"></a>
       <section class="about">
         <div class="about-wrapper">
           <div class="about-text">
-            <h2>Who am I?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-               Excepteur sint occaecat cupidatat non proident,
-               sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>Vem är jag?</h2>
+            <p>Jag heter Axel Wredlert och är en blivande frontend-utvecklare.</p>
           </div>
           <a class="button" target="_blank" href="https://github.com/xelawre">GitHub <i class="fab fa-github"></i> </a>
         </div>
       </section>
+      <a name="portfolio"></a>
       <section class="portfolio">
-        <h2 class="my-portfolio-text">Recent projects</h2>
+        <h2 class="my-portfolio-text">Mina senaste projekt</h2>
         <div class="my-projects">
           <div class="project">
             <div class="content-wrapper">
@@ -58,11 +56,12 @@
               <img src="../img/check-weather.png" alt="check-weather">
               <div class="info-wrapper">
                 <div class="p-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Check-weather är en liten väder-webb-applikation.
+                  Det lokala vädret hämtas från ett väder-API baserat på användarens IP-adress.
+                  Det går även att söka fritt efter vädret i över 200,000 olika städer.
                 </div>
                 <div class="p-techs">
-                  HTML, CSS & JavaScript
+                  HTML, CSS & JavaScript/jQuery.
                 </div>
               </div>
             </div>
@@ -73,11 +72,10 @@
               <img src="../img/trollverkstan.png" alt="trollverkstan">
               <div class="info-wrapper">
                 <div class="p-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Som IT-ansvarig åt Trollverkstan byggde jag och driftsatte en ny hemsida åt dem för att deras kunder enkelkt ska kunna se hela deras sortiment. 
                 </div>
                 <div class="p-techs">
-                  Wordpress
+                  WordPress, CSS & JavaScript
                 </div>
               </div>
             </div>
@@ -88,8 +86,7 @@
               <img src="../img/kyh-landingpage.png" alt="kyh-landingpage">
               <div class="info-wrapper">
                 <div class="p-description">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ett Skolprojekt som gick ut på att skapa en landingssida till en valfri KYH-utbilding.
                 </div>
                 <div class="p-techs">
                   HTML, CSS & JavaScript
@@ -99,17 +96,22 @@
           </div>
         </div>
       </section>
+      <a name="contact"></a>
       <section class="contact">
         <div class="contact-wrapper">
-          <a class="button" href="mailto:axelwredlert@gmail.com"><i class="far fa-envelope"></i></a>
-          <h2>Mail</h2>
+          <img class="profile-picture" src="img/axel.png" alt="profile-picture">
+          <div class="contact-info-wrapper">
+            <h2>Kontakt</h2>
+            <h3>Namn: Axel Wredlert</h3>
+            <h3>Telefon: 073-983 00 31</h3>
+            <h3>Email: axelwredlert@gmail.com</h3>
+          </div>
         </div>
       </section>
       <footer>
         <div class="social-icon-wrapper">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
+          <a href="https://facebook.com/axel.profil"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/xelawre"><i class="fab fa-github"></i></a>
         </div>
         <div class="copyright">© axelwredlert.com - 2018</div>
       </footer>
