@@ -1,8 +1,3 @@
-@keyframes fadein {
-	from {opacity: .5;}
-	to {opacity: 1;}
-}
-
 @keyframes slideup  {
 	from {transform: translateY(100%);}
 	to {transform: translateY(0);}
@@ -41,6 +36,7 @@
 		box-shadow:0 0 20px #796da8;
 	}
 }
+
 html {
 	scroll-behavior: smooth;
 }
@@ -328,7 +324,6 @@ a {
 	align-items: center;
 	background-color: #252627;
 	border-top: 4px solid #1b1c1c;
-	animation: fadein 1s;
 }
 
 .contact-wrapper {
@@ -353,7 +348,6 @@ a {
 	color: #50ceb5;
 	padding: 5px 0;
 	margin: 0;
-
 }
 
 .contact-info-wrapper h3 {
