@@ -217,7 +217,7 @@ a {
 #portfolio {
 	width: 100%;
 	height: calc(100vh - 73px);
-	background: linear-gradient(#062a29, #367f7f);
+	background: #062a29;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -322,8 +322,8 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #252627;
-	border-top: 4px solid #1b1c1c;
+	background-color: #020622;
+	border-top: 4px solid #796caa;
 }
 
 .contact-wrapper {
@@ -366,6 +366,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
+	background-color: #020622;
 }
 
 .social-icon-wrapper {
@@ -539,13 +540,13 @@ canvas {
 
 	#contact {
 		font-size: 1.5rem;
-		height: inherit;
-		padding: 40px 0;
 	}
 
 	.contact-wrapper {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		align-content: center;
 		justify-content: center;
 	}
 
